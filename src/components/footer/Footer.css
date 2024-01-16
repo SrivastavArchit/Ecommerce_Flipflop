@@ -1,0 +1,74 @@
+.footer{
+    height: 42vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:9rem;
+    width: 60%;
+    margin: auto;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    justify-content: space-around;
+}
+.footer_link{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.footer_link li{
+    font-weight: 400;
+    font-size: medium;
+}
+.footer_logo{
+    display: flex;
+    gap: -1rem;
+    align-items: center;
+}
+.footer_logo h3{
+  font-family: 'Dancing Script';
+    letter-spacing: .2rem;
+    line-height: 2px;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.footer_icon{
+    display: flex;
+    gap: 2rem;
+}
+.myname{
+   
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    margin-left: .6rem;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+      width: 90%;
+      height: auto;
+      margin-top: 61vh;
+      padding-bottom: 2rem;
+    }
+  
+    .footer_link {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .footer_logo {
+      gap: 0.5rem;
+    }
+  
+    .footer_icon {
+      gap: 1rem;
+    }
+  }
+  .dark{
+  
+    color: white;
+  }
+  

@@ -1,0 +1,74 @@
+.offers{
+    width: 66%;
+    height: 64vh;
+    background-color: #00ccff;
+    display: flex;
+   margin-left: 17%;
+   justify-content: space-between;
+}
+.offer_right img{
+    height: 60vh;
+    padding-right: 3rem;
+}
+.offer_left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.offer_left h1{
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+.offer_left p{
+    padding-top: 2rem;
+
+}
+.offer_left button{
+    margin-top: 3rem;
+    border: 2px solid rgb(81, 83, 84);
+   
+    
+}
+/* Your existing CSS code... */
+
+/* Media Queries for Mobile */
+
+@media (max-width: 768px) {
+    .offers {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      margin-left: 5%;
+    }
+  
+    .offer_left,
+    .offer_right {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .offer_right img {
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+    }
+  
+    .offer_left h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  
+    .offer_left p {
+      padding-top: 1rem;
+    }
+  
+    .offer_left button {
+      margin-top: 1.5rem;
+    }
+  }
+
+  

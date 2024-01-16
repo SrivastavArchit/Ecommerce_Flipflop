@@ -1,0 +1,47 @@
+.popular {
+    height: 80vh;
+    width: 100%;
+}
+.popular h1{
+text-align: center; 
+margin-top: 2rem; 
+font-size: 1.8rem;  
+}
+.popular hr{
+    width: 10%;
+    height: 6px;
+    background-color: black;
+margin-left: 45%;
+
+margin-top: 1rem;
+}
+
+.popular_item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .popular {
+      height: auto;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+    .popular hr {
+      width: 20%;
+      margin-left: 40%;
+    }
+  
+    .popular_item {
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  }
+  .dark hr{
+    background-color: yellow;
+  }
+  

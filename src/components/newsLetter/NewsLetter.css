@@ -1,0 +1,132 @@
+.newsLetter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+    background: linear-gradient(180deg, rgba(253, 200, 76, 0.543) 0%, rgba(255, 207, 156, 0.553) 36%, rgba(255, 246, 234, 0.895) 65%);
+    height: 40vh;
+    margin: auto;
+    width: 60%;
+    border-radius: 5px;
+   
+}
+.X {
+    color: red;
+    font-size: 2.8rem;
+}
+.letter_P {
+    padding-top: 2rem;
+}
+.newsLetter p{
+    margin-top: 2rem;
+}
+.email_btn{
+    margin-top: 1.6rem;
+   display: flex;
+   gap: 1.2rem;
+}
+.email_btn button{
+    
+
+    width: 130px;
+    height: 37px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background: rgb(36, 35, 35);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+.newsLetter h1{
+    color: #000;
+}
+
+.email_btn button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.email_btn button:active {
+    color: #000
+    
+}
+
+.email_btn button:active:after {
+    background: transparent;
+}
+
+.email_btn button:hover:before {
+    opacity: 1;
+}
+
+.email_btn button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 2px solid rgb(255, 252, 252);
+
+    height: 100%;
+    background: #1a0000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.email_btn input{
+    width: 16rem;
+    border-radius: 10px;
+    padding-inline: 4rem;
+    height: 37px;
+}
+
+/* Your existing CSS code... */
+
+/* Media Queries for Mobile */
+
+@media (max-width: 768px) {
+    .newsLetter {
+      width: 90%;
+      height: auto;
+    }
+  
+    .email_btn {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .email_btn input {
+      width: 100%;
+      padding-inline: 1rem;
+    }
+  
+    .email_btn button {
+      width: 100%;
+    }
+  }
+  .dark h1{
+    color: aliceblue;
+  }
+ 
+  
